@@ -1,2 +1,2 @@
 # Research_Network
-Social Network for Researcher.
+Social Network for Researcher
