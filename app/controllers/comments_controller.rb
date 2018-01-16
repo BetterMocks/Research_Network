@@ -2,7 +2,9 @@ class CommentsController < ApplicationController
 	skip_before_action :verify_authenticity_token
 def create
 	@post = Post.find(params[:post_id])
+	 @comment.create_activity :create, owner: current_user
     @comment = @post.comments.create(params[:comment].permit(:name, :body))
+
     redirect_to post_path(@post)
 end
 def index

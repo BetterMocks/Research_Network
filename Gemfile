@@ -7,7 +7,7 @@ end
 
 gem "mini_magick"
 gem 'acts_as_votable', '~> 0.11.1'
-
+gem 'public_activity'
 gem 'carrierwave', '~> 1.0'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -1,0 +1,6 @@
+added updated to 
+<% if activity.trackable %>
+  <%= link_to activity.trackable.post.context, activity.trackable.recipe %>
+<% else %>
+  which has since been removed 
+<% end %>

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
  
+  resources :activities
+
   resources :pmembers
 
- 
+ resources :user
 resources :conversations do
   resources :messages
  end
@@ -20,6 +22,7 @@ resources :home do
     get :following, :followers
   end
 end
+
 resources :relationships, only: [:create, :destroy]
 resources :home
   resources :relationships
