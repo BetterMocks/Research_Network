@@ -12,7 +12,7 @@ skip_before_action :verify_authenticity_token
   def show
 
   end
-
+  
   # GET /posts/new
   def new
     @post = Post.new
@@ -85,6 +85,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:attachment, :context, :user_id)
+      params.require(:post).permit(:attachment, :context, :user_id , :public)
     end
 end

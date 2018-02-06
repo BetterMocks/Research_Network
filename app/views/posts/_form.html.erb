@@ -6,5 +6,8 @@
       <%= f.file_field :attachment, class: 'form-control' %>
   </div>
   <%= f.submit :post, class: 'btn btn-primary'%>
-  <%= link_to 'Show', posts_show_path%>
+  <button>private post</button>
+  
+  <%= link_to "feed", feed_index_path %>
+
 <% end %>

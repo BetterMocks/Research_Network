@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
- 
+  
+  resources :feed
+
   resources :activities
 
   resources :pmembers
@@ -12,6 +14,8 @@ resources :conversations do
   member do
     put "like", to: "posts#upvote"
     put "dislike", to: "posts#downvote"
+
+
   end
 end
 resources :posts do
